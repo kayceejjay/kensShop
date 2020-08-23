@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Belleza|Open+Sans|Bitter|Cookie|Cute+Font|Do+Hyeon|Fjalla+One|Gaegu:300,400,700|Gamja+Flower|Great+Vibes|Gugi|Satisfy');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+background-color: black;
+color: white;
+}
+
+img {
+width: 13%;
+height: 13%;
+}
+
+.header .container {
+display: inline;
+}
+
+input[type=text] {
+  background-color: black;
+  border: none;
+  border-bottom: 1px dotted white;
+  margin: 10px;
+}
+
+button {
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid blue;
+}
+
+.menu .container {
+  background-color: #07162c;
+  color: white;
+  width: 100%;
+}
+
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: #e6005c;
+  font-weight: bold;
+}
+
+.main {
+background-image: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/bass-bg.jpg);
+background-size: cover;
+}
+
+.main .container {
+min-height: 500px;
+width: auto;
+color: white;
+}
+
+#datehead {
+  padding-top: 35px;
+}
+
+h1 {
+ font-size: 4.5em;
+ font-weight: strong;
+}
+
+.supporting .container .col-md-12 {
+  min-height: 150px;
+  min-width: 100%;
+/*   background-image: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/ad.jpg); */
+ background-size: cover;
+ margin-top: 22px;
+ margin-bottom: 47px;
+}
+
+.banner-ad {
+  background: #093e83;
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+}
+
+#ad1, #ad2 {color: white; padding: 0 0 0 50px;}
+
+#ad1 {
+  font-family: 'Open Sans';
+  font-size: 3em;
+  font-weight: 700;
+  margin: 20px 0 0 0;
+}
+
+#ad2 {
+  font-family: 'Open Sans';
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+}
+
+#adreg {
+  float: right;
+  margin: -60px 50px 0 0;
+  padding: 10px;
+  border: 3px double mediumslateblue;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.footer {
+background-color: black;
+color: white;
+min-height: 150px;
+min-width: 100%;
+}
+
+.footer .container ul {
+ margin-top: 35px;
+  
+}
+.footer .container li {
+display: inline;
+/*margin: 20px;*/
+padding: 20px;  
+}
+
+.footer .container .col-md-3 {
+ margin-top: 32px;
+}

@@ -1,0 +1,538 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Belleza|Black+Han+Sans|Bitter|Cookie|Cute+Font|Do+Hyeon|Fjalla+One|Gaegu:300,400,700|Gamja+Flower|Great+Vibes|Gugi|Satisfy');
+
+
+:root {
+  --elHeight: 0px;
+  --winSize: 0px;
+  --winHeight: 0px;
+  --winWidth: 0px;
+  --diffHeight: 0px;
+  --waterygray: #eff5f5;
+  --softblue: #9fc6c6;
+  --bluegray: #609f9f;
+  --shale: darkslategray;
+  --tile: #132020;
+}
+
+body {background-image: url('/img/car-repair-362150_1920.jpg');}
+/*'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2736276/car-repair-362150_1920.jpg'*/
+
+#site-container {
+  margin: 50px auto;
+/*   border: 3px dotted goldenrod; */
+   /* margin-top: calc( (100vh - var(--elHeight)) * 0.5 );
+  margin-bottom: calc( (100vh - var(--elHeight)) * 0.5 );*/
+  position: relative;
+}
+
+.center {text-align: center;}
+
+.just {text-align: justify;}
+
+#container {
+  color: lemonchiffon;/*orange*/
+/*   border: 3px dashed lime; */
+  margin: 60px 0px 0 30px;
+  position: absolute;
+}
+
+.title {
+  font-family: 'Black Han Sans', sans-serif;/*'Handel_Gothic', cursive*/
+  font-size: 4em;
+  font-weight: 800;
+  text-align: center;
+  color: lemonchiffon;
+  margin: 50px 0 0 0;
+/*   border: 2px dotted gainsboro; */
+}
+
+.subtitle {
+  font-family: 'Bitter', serif;/*Cookie*/
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 30px;
+/*   border: 2px dotted gainsboro; */
+}
+
+.direction {
+  font-family: 'Gamja Flower';/*'Milkshake', cursive*/
+  font-size: 1.75em;
+  margin: 0 20px 20px 30px;
+/*   border: 2px dotted gainsboro; */
+}
+
+.special {
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+
+/*=======Circular Menu Start========*/
+
+#circular-menu {
+  height: 300px;
+  margin: 50px 20px 20px 0px;
+/*   border: 3px dotted fuchsia; */
+  position:relative;
+}
+
+.menu-toggler {
+  position: absolute;
+  display: block;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  margin:auto;
+  width:40px;
+  height:40px;
+  z-index:2;
+  opacity:0;
+  cursor:pointer;
+}
+.menu-toggler:hover + label,
+.menu-toggler:hover + label:before,
+.menu-toggler:hover + label:after,{
+  background: white;
+}
+.menu-toggler:checked + label {
+  background: transparent;
+}
+.menu-toggler:checked + label:before,
+.menu-toggler:checked + label:after,{
+  top:0;
+  width:40px;
+  transform-origin: 50% 50%;
+}
+.menu-toggler:checked + label:before {
+  transform: rotate(45deg) translateY(-15px) translateX(-15px);
+}
+.menu-toggler:checked + label:after {
+  transform: rotate(-45deg);
+}
+.menu-toggler:checked ~ ul .menu-item { 
+  opacity: 1;
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+  transform: rotate(0deg) translate(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+  transform: rotate(60deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+  transform: rotate(120deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+  transform: rotate(180deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+  transform: rotate(240deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(6) {
+  transform: rotate(300deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item a {
+  pointer-events:auto;
+}
+.menu-toggler + label {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(230, 239, 250, 0.9);
+  transition: transform 0.5s top 0.5s;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.menu-toggler + label:before,
+.menu-toggler + label:after {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s top 0.5s;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+}
+.menu-toggler + label:before {
+  top: 10px;
+}
+.menu-toggler + label:after {
+  top: -10px;
+}
+.menu-item:nth-child(1) a {
+  transform: rotate(0deg);
+}
+.menu-item:nth-child(2) a {
+  transform: rotate(-60deg);
+}
+.menu-item:nth-child(3) a {
+  transform: rotate(-120deg);
+}
+.menu-item:nth-child(4) a {
+  transform: rotate(-180deg);
+}
+.menu-item:nth-child(5) a {
+  transform: rotate(-240deg);
+}
+.menu-item:nth-child(6) a {
+  transform: rotate(-300deg);
+}
+.menu-item {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu-item a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  line-height: 80px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(230, 230, 250, 0.7);
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.menu-item a:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 44.44px
+}
+
+/*=======Circular Menu End==========*/
+
+
+/*=========Tooltips==========*/
+
+/*Tool tip message*/
+.tooltiptext {
+  visibility: hidden;
+  width: 255px;
+  background-color: rgba(60,60,60,.7);
+  color: ivory;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 0.5em;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip on left*/
+  position: absolute;
+  z-index: 1;
+  top: 30%;/*decrease to move tip closer to tip container*/
+  right: 50%;
+  margin-right: 30px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+  /* Position the tooltip on right */
+.flip {
+  position: absolute;
+  z-index: 1;
+  top: 40%;/*decrease to move tip closer to tip container*/
+  left: 50%;
+  margin-left: 30px;
+}
+
+/*Tooltip Parenthetical Line*/
+span p {line-height: 0.5;}
+.parenth {
+  font-family: 'Belleza', serif;
+  font-size: 0.6em;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
