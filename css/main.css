@@ -112,7 +112,7 @@ textarea {
   --tile: #132020;
 }
 
-body {background-image: url("img/car-repair-362150_1920.jpg");}
+body {background-image: url("..img/car-repair-362150_1920.jpg");}
 /*'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2736276/car-repair-362150_1920.jpg'*/
 
 #site-container {
