@@ -4,7 +4,7 @@
 
 :root {
   --blackblue: #1c1c1c;
-  
+
 }
 
       html, body {
@@ -18,7 +18,7 @@
       }
 
       p {
-        font-family: Helvetica, Arial, sans-serif; 
+        font-family: Helvetica, Arial, sans-serif;
       }
 
       .container {
@@ -29,7 +29,7 @@
       /* Main */
       .main {
         text-align: center;
-        background: url('/img/skiing-1650760_1920.jpg') no-repeat center center;
+        background: url('../img/skiing-1650760_1920.jpg') no-repeat center center;
         background-size: cover;
         height: 600px;
       }
@@ -115,7 +115,7 @@
 
       /* Feature */
       .feature {
-        background: url('/img/walkers-907574_1920.jpg') no-repeat center center;
+        background: url('../img/walkers-907574_1920.jpg') no-repeat center center;
         background-size: cover;
         height: 600px;
         text-align: center;
@@ -136,7 +136,7 @@
 
       /* Footer */
       .footer {
-        background: url('/img/forest-1186886_1920.jpg') no-repeat center center;
+        background: url('../img/forest-1186886_1920.jpg') no-repeat center center;
         background-size: cover;
         height: 600px;
         text-align: center;
