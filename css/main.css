@@ -112,7 +112,7 @@ textarea {
   --tile: #132020;
 }
 
-body {background-image: url('/img/car-repair-362150_1920.jpg');}
+body {background-image: url('img\car-repair-362150_1920.jpg');}
 /*'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2736276/car-repair-362150_1920.jpg'*/
 
 #site-container {
@@ -207,7 +207,7 @@ body {background-image: url('/img/car-repair-362150_1920.jpg');}
 .menu-toggler:checked + label:after {
   transform: rotate(-45deg);
 }
-.menu-toggler:checked ~ ul .menu-item { 
+.menu-toggler:checked ~ ul .menu-item {
   opacity: 1;
 }
 .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
@@ -336,7 +336,7 @@ body {background-image: url('/img/car-repair-362150_1920.jpg');}
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  
+
   /* Position the tooltip on left*/
   position: absolute;
   z-index: 1;
