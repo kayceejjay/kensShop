@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans|Volkhov&display=swap">
-<style></style>
+
 <h1 style="font-family:'Tahoma'; color:darkslateblue;">Under the Hood: Ken's Shop</h1>
 
 
